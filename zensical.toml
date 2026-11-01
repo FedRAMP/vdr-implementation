@@ -1,0 +1,145 @@
+[project]
+nav = [
+  { "Overview" = [
+    "index.md",
+    { "Changelog" = "changelog.md"}
+  ]},
+  { "--> return to FedRAMP.gov" = "/" },
+]
+
+site_name = "VDR/VER Implementation Collection Requirements"
+site_description = "Explains how FedRAMP will collect VDR/VER implementation information, with guidance for cloud service providers on preparing appropriate materials."
+site_author = "pete@fedramp.gov"
+docs_dir = "content/"
+site_dir = "html/"
+site_url = "https://www.fedramp.gov/vdr-implementation"
+repo_url = "https://github.com/FedRAMP/vdr-implementation"
+repo_name = "FedRAMP/vdr-implementation"
+copyright = "fedramp.gov"
+
+extra_javascript = [
+  "https://www.fedramp.gov/javascripts/dap.js"
+]
+
+[project.extra]
+homepage = "/vdr-implementation"
+
+[project.extra.analytics]
+provider = "google"
+property = "G-E1PPDRDY5R"
+
+[project.extra.analytics.feedback]
+title = "Was this page helpful?"
+
+[[project.extra.analytics.feedback.ratings]]
+icon = "material/emoticon-happy-outline"
+name = "This page was helpful"
+data = 1
+note = "Thanks for your feedback!"
+
+[[project.extra.analytics.feedback.ratings]]
+icon = "material/emoticon-sad-outline"
+name = "This page could be improved"
+data = 0
+note = "Thanks for your feedback!"
+
+
+[project.theme]
+custom_dir = "overrides"
+logo = "assets/fr-only-logo-black.png"
+language = "en"
+features = [
+  "announce.dismiss",
+  "content.code.annotate",
+  "content.code.copy",
+  "content.code.select",
+  "content.footnote.tooltips",
+  "content.tabs.link",
+  "content.tooltips",
+  "header.autohide",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.instant.progress",
+  "navigation.path",
+  "navigation.prune",
+  "navigation.sections",
+  "navigation.tabs",
+  "navigation.tabs.sticky",
+  "navigation.top",
+  "navigation.tracking",
+  #"navigation.expand",
+  "search.highlight",
+  "toc.follow",
+  #"toc.integrate",
+]
+
+[project.theme.icon]
+repo = "fontawesome/brands/github"
+
+# Palette toggle for automatic mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+# Palette toggle for light mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+# Palette toggle for dark mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+[project.validation]
+unresolved_references = false
+
+[project.markdown_extensions]
+abbr = {}
+admonition = {}
+attr_list = {}
+def_list = {}
+footnotes = {}
+md_in_html = {}
+tables = {}
+
+[project.markdown_extensions.toc]
+permalink = true
+
+[project.markdown_extensions.pymdownx.mark]
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+[project.markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji"
+emoji_generator = "zensical.extensions.emoji.to_svg"
+
+[project.plugins.tags]
+
+[project.plugins.social]
+enabled = true
+cards_layout = "fedramp"
+cards_layout_dir = "overrides/layouts"
+
+[project.plugins.social.cards_layout_options]
+background_color = "#f4f6f8"
+color = "#162e51"
+logo = "overrides/assets/fr-only-logo-black.png"
+
+[project.plugins.rss]
+enabled = true
+feed_title = "Site Project Changelog"
+match_path = "^changelog\\.md$"
+length = 1
+abstract_chars_count = 4096

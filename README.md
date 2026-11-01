@@ -1,2 +1,12 @@
-# vdr-implementation
-A Zensical site with information on FedRAMP's preparation for the VDR/VER implementation deadline in 2026.
+# VDR/VER Implementation Collection Requirements
+
+**Warning: This is under active development and is only public for awareness and convenience.**
+
+Please do not take any action yet based on this repository or site. Formal guidance will follow.
+
+--
+
+Working on it!
+
+
+
