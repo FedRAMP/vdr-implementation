@@ -1,0 +1,27 @@
+# Deploys Zensical site to GitHub Pages using the FedRAMP shared workflow
+
+name: "(Local) Publish: Deploy Preview Site"
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  site:
+    name: Build Preview Site
+    uses: FedRAMP/shared-workflows/.github/workflows/build-fr-zensical.yml@v1
+    with:
+      deploy: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+# Additional stuff for 2026 or similar, edit as appropriate.
+#      use-bun: true
+#      submodules: true
+#      venv-path: tools/.venv
+#      build-script: tools/scripts/build-ci.sh
