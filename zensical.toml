@@ -1,8 +1,20 @@
 [project]
 nav = [
-  { "Overview" = [
-    "index.md",
-    { "Changelog" = "changelog.md"}
+  { "Overview" = "index.md"},
+  { "Enforcement & Deadlines" = "deadlines.md" },
+  { "Agency-Provided Offerings" = "agency-provided.md" },
+  { "Changelog" = "changelog.md"},
+  { "Implementing the VDR/VER" = [
+    { "Requirements" = "requirements.md"},
+    { "Resources & FAQs" = "resources.md" },
+    { "Agency Customers" = "agencies.md" }
+  ]},
+  { "Attestation" = [
+    { "Information Collection" = "collection.md" },
+    { "Schemas & Templates" = "schemas.md" },
+    { "Corrective Action Plans" = "cap.md" },
+    { "Examples" = "examples.md" },
+    { "Validators" = "validate.md" },
   ]},
   { "--> return to FedRAMP.gov" = "/" },
 ]
@@ -65,8 +77,8 @@ features = [
   "navigation.path",
   "navigation.prune",
   "navigation.sections",
-  "navigation.tabs",
-  "navigation.tabs.sticky",
+  #"navigation.tabs",
+  #"navigation.tabs.sticky",
   "navigation.top",
   "navigation.tracking",
   #"navigation.expand",
