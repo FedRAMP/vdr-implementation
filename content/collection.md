@@ -10,7 +10,7 @@ FedRAMP will collect the following information from each cloud service provider:
   - Non-Internet-Reachable
   - Likely Exploitable
   - Non-Likely Exploitable
-  - Known Exploited
+  - Known Exploited34
   - Partially Mitigated
   - Fully Mitigated
   - Remediated
