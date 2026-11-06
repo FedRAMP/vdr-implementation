@@ -28,6 +28,7 @@ site_url = "https://www.fedramp.gov/vdr-implementation"
 repo_url = "https://github.com/FedRAMP/vdr-implementation"
 repo_name = "FedRAMP/vdr-implementation"
 copyright = "fedramp.gov"
+extra_css = ["stylesheets/extra.css"]
 
 extra_javascript = [
   "https://www.fedramp.gov/javascripts/dap.js"
